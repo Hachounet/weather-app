@@ -15,20 +15,41 @@ body {
     'search search search'
     'infos infos infos';
 
+  .on-loading {
+    filter: blur(2px);
+  }
+
   header {
     grid-area: search;
-    background-color: darkslategrey;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
     width: 100%;
     height: 100%;
 
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
+    justify-items: center;
     align-items: center;
-    flex-direction: column;
-    gap: 8px;
 
-    h1 {
-      display: block;
+    #location-zone {
+      grid-column: 3/4;
+      display: flex;
+    }
+
+    #search-zone {
+      grid-column: 2/3;
+      grid-row: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    #forecast-btns-zone {
+      grid-column: 1/2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 
@@ -37,5 +58,32 @@ body {
     background-color: darkslateblue;
     width: 100%;
     height: 100%;
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .weather-card {
+    background-color: rgba(0, 0, 0, 0.295);
+    grid-column: 2/3;
+    width: 33vw;
+    height: 80vh;
+    border-radius: 15%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .text-informations {
+      width: 50%;
+      display: flex;
+      justify-content: space-evenly;
+
+      color: white;
+      font-weight: 600;
+    }
   }
 }

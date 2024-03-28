@@ -23,8 +23,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       hash: true,
-      title: "Weather App",
-      myPageHeader: "Weather App",
+      title: "Worst Weather App",
+      myPageHeader: "Worst Weather App",
       template: "./src/index.html",
       filename: "./index.html",
     }),

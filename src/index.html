@@ -7,19 +7,28 @@
 
   <body>
     <header>
-      <h1><%= htmlWebpackPlugin.options.myPageHeader %></h1>
-      <form>
-        <input
-          id="search-bar"
-          placeholder="Type your location..."
-        />
-        <button
-          type="button"
-          id="search-btn"
-        >
-          Search !
-        </button>
-      </form>
+      <div id="forecast-btns-zone">
+        <button id="current-weather">Current Weather</button>
+        <button id="forecast-weather">3Days Weather</button>
+      </div>
+
+      <div id="location-zone"></div>
+
+      <div id="search-zone">
+        <h1><%= htmlWebpackPlugin.options.myPageHeader %></h1>
+        <form>
+          <input
+            id="search-bar"
+            placeholder="Type your location..."
+          />
+          <button
+            type="button"
+            id="search-btn"
+          >
+            Search !
+          </button>
+        </form>
+      </div>
     </header>
     <div id="weather-app"></div>
   </body>
