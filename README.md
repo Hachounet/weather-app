@@ -1,17 +1,14 @@
-# Template
+# Worst Weather App
 
-This repo serve as Ready-To-Work template for next projects with The Odin Project.
-This is a WIP.
-
-Packages installed are :
+Packages installed are for development :
 ESLint
 Prettier
 Prettier-ESLint-Config
 Webpack
 Webpack Dev Serv
 
-Need to be installed or setup :
-
-Asset management for Webpack
-
-Code-Actions ( plugin VSCode )
+This is probably the most ugliest Weather App you could see. 
+It work with WeatherAPI ( public for purpose ) and GIPHY Api. 
+No cache. 
+Front-end could have been worked more, but way more fun like that. 
+Time to move on !
